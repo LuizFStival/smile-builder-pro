@@ -1,13 +1,6 @@
 // Edite aqui as informações de contato da Dra. Giullia
-// Número do WhatsApp (somente dígitos: país + DDD + número)
-export const WHATSAPP_NUMBER = "554195910390";
-
-// Mensagem inicial (pré-preenchida) ao abrir o WhatsApp
-export const WHATSAPP_MESSAGE = encodeURIComponent(
-  "Olá! Vim pelo Instagram e gostaria de agendar uma consulta."
-);
-
-export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
+export const WHATSAPP_URL =
+  "https://api.whatsapp.com/message/7SM4F7SSO2XME1?autoload=1&app_absent=0&utm_source=ig";
 
 export const CONTACT_INFO = {
   city: "Curitiba",
