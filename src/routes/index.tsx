@@ -1,26 +1,28 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/sections/Hero";
+import { Sobre } from "@/components/sections/Sobre";
+import { Servicos } from "@/components/sections/Servicos";
+import { Diferenciais } from "@/components/sections/Diferenciais";
+import { Depoimentos } from "@/components/sections/Depoimentos";
+import { CTA } from "@/components/sections/CTA";
+import { Contato } from "@/components/sections/Contato";
+import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main>
+      <Hero />
+      <Sobre />
+      <Servicos />
+      <Diferenciais />
+      <Depoimentos />
+      <CTA />
+      <Contato />
+      <WhatsAppFloat />
+    </main>
+  );
 }
