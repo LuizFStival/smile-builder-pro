@@ -7,11 +7,13 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1];
+const isGitHubPages = process.env.GITHUB_PAGES === "true";
 const base =
-  process.env.GITHUB_PAGES === "true" && repoName ? `/${repoName}/` : "/";
+  isGitHubPages && repoName ? `/${repoName}/` : "/";
 const routerBasepath = base === "/" ? "" : base.replace(/\/$/, "");
 
 export default defineConfig({
+  cloudflare: isGitHubPages ? false : undefined,
   vite: {
     base,
   },
@@ -19,5 +21,18 @@ export default defineConfig({
     router: {
       basepath: routerBasepath,
     },
+    prerender: {
+      enabled: isGitHubPages,
+    },
+    pages: isGitHubPages
+      ? [
+          {
+            path: "/",
+            prerender: {
+              outputPath: "/index.html",
+            },
+          },
+        ]
+      : [],
   },
 });
