@@ -7,6 +7,7 @@ import { Depoimentos } from "@/components/sections/Depoimentos";
 import { CTA } from "@/components/sections/CTA";
 import { Contato } from "@/components/sections/Contato";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { ScrollToTopFloat } from "@/components/ScrollToTopFloat";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -22,6 +23,7 @@ function Index() {
       <Depoimentos />
       <CTA />
       <Contato />
+      <ScrollToTopFloat />
       <WhatsAppFloat />
     </main>
   );

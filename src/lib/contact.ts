@@ -2,6 +2,9 @@
 export const WHATSAPP_URL =
   "https://api.whatsapp.com/message/7SM4F7SSO2XME1?autoload=1&app_absent=0&utm_source=ig";
 
+export const INSTAGRAM_URL = "https://www.instagram.com/giucampioni/";
+export const INSTAGRAM_HANDLE = "@giucampioni";
+
 export const CONTACT_INFO = {
   city: "Curitiba",
   state: "PR",
