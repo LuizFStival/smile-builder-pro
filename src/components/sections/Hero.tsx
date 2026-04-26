@@ -32,17 +32,7 @@ export function Hero() {
               <a href="#servicos">Ver serviços</a>
             </Button>
           </div>
-          <div className="flex items-center justify-center gap-6 pt-4 text-sm text-muted-foreground lg:justify-start">
-            <div>
-              <p className="text-2xl font-semibold text-primary">Formação recente</p>
-              <p>com agenda ativa de pacientes</p>
-            </div>
-            <div className="h-10 w-px bg-border" />
-            <div>
-              <p className="text-2xl font-semibold text-primary">100%</p>
-              <p>atendimento humanizado</p>
-            </div>
-          </div>
+
         </div>
 
         <div className="relative animate-fade-up [animation-delay:200ms]">
@@ -61,4 +51,3 @@ export function Hero() {
     </section>
   );
 }
-
