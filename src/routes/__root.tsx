@@ -1,4 +1,4 @@
-import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { HeadContent, Link, Outlet, Scripts, createRootRoute } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
 
@@ -30,20 +30,35 @@ export const Route = createRootRoute({
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Dra. Giullia Campioni | Cirurgiã Dentista em Curitiba" },
-      { name: "description", content: "Dra. Giullia Campioni - CRO-PR 39945. Cirurgiã Dentista com atendimento humanizado, foco em odontopediatria. Agende sua consulta pelo WhatsApp." },
+      {
+        name: "description",
+        content:
+          "Dra. Giullia Campioni - CRO-PR 39945. Cirurgiã Dentista com atendimento humanizado, foco em odontopediatria. Agende sua consulta pelo WhatsApp.",
+      },
       { name: "author", content: "Dra. Giullia Campioni" },
-      { name: "keywords", content: "dentista, odontopediatria, cirurgiã dentista, Curitiba, Paraná, atendimento infantil, clínica geral odontológica" },
+      {
+        name: "keywords",
+        content:
+          "dentista, odontopediatria, cirurgiã dentista, Curitiba, Paraná, atendimento infantil, clínica geral odontológica",
+      },
       { property: "og:title", content: "Dra. Giullia Campioni | Cirurgiã Dentista" },
-      { property: "og:description", content: "Cuidando do seu sorriso com carinho e excelência. Atendimento humanizado para toda a família." },
+      {
+        property: "og:description",
+        content:
+          "Cuidando do seu sorriso com carinho e excelência. Atendimento humanizado para toda a família.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", type: "image/svg+xml", href: `${import.meta.env.BASE_URL}favicon.svg` },
+      { rel: "icon", type: "image/svg+xml", href: `${import.meta.env.BASE_URL}favicon.svg?v=2` },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
@@ -53,7 +68,7 @@ export const Route = createRootRoute({
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
@@ -68,3 +83,4 @@ function RootShell({ children }: { children: React.ReactNode }) {
 function RootComponent() {
   return <Outlet />;
 }
+
