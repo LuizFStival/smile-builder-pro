@@ -43,7 +43,8 @@ export function Servicos() {
             Cuidado completo para o seu sorriso
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Tratamentos modernos com abordagem suave, segura e focada no seu bem-estar.
+            Tratamentos modernos com abordagem suave, segura e focada no seu{" "}
+            <span className="whitespace-nowrap">bem‑estar</span>.
           </p>
         </div>
 
@@ -65,3 +66,4 @@ export function Servicos() {
     </section>
   );
 }
+
