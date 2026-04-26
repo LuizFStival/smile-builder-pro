@@ -5,9 +5,9 @@ import heroImage from "@/assets/hero-dentista.jpg";
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-hero">
-      <div className="absolute inset-0 opacity-30 pointer-events-none">
-        <div className="absolute top-20 -left-20 h-72 w-72 rounded-full bg-primary-glow/30 blur-3xl" />
-        <div className="absolute bottom-10 -right-10 h-96 w-96 rounded-full bg-accent/40 blur-3xl" />
+      <div className="pointer-events-none absolute inset-0 opacity-30">
+        <div className="absolute -left-20 top-20 h-72 w-72 rounded-full bg-primary-glow/30 blur-3xl" />
+        <div className="absolute -right-10 bottom-10 h-96 w-96 rounded-full bg-accent/40 blur-3xl" />
       </div>
 
       <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 md:py-28 lg:grid-cols-2 lg:items-center">
@@ -35,8 +35,8 @@ export function Hero() {
           </div>
           <div className="flex items-center justify-center gap-6 pt-4 text-sm text-muted-foreground lg:justify-start">
             <div>
-              <p className="text-2xl font-semibold text-primary">+5</p>
-              <p>anos de experiência</p>
+              <p className="text-2xl font-semibold text-primary">Recém-formada</p>
+              <p>já atende diversos pacientes</p>
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
@@ -62,3 +62,4 @@ export function Hero() {
     </section>
   );
 }
+
