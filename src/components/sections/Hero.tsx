@@ -20,8 +20,8 @@ export function Hero() {
           </h1>
           <p className="text-lg text-muted-foreground md:text-xl">
             Cuidando do seu sorriso com{" "}
-            <span className="italic text-primary">carinho e excelência</span>.
-            Atendimento humanizado para toda a família, com olhar especial para as crianças.
+            <span className="italic text-primary">carinho e excelência</span>. Atendimento humanizado
+            para toda a família, com olhar especial para as crianças.
           </p>
           <div className="flex flex-col items-center gap-3 sm:flex-row lg:justify-start">
             <Button asChild variant="hero" size="lg">
@@ -35,8 +35,8 @@ export function Hero() {
           </div>
           <div className="flex items-center justify-center gap-6 pt-4 text-sm text-muted-foreground lg:justify-start">
             <div>
-              <p className="text-2xl font-semibold text-primary">Recém-formada</p>
-              <p>já atende diversos pacientes</p>
+              <p className="text-2xl font-semibold text-primary">Formação recente</p>
+              <p>com atendimento diário</p>
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
